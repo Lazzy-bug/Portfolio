@@ -27,15 +27,27 @@ document.addEventListener('DOMContentLoaded', () => {
         projectImage.src = project.image;
         projectImage.alt = project.title;
         
+        const projectDetails = document.createElement('div');
+        projectDetails.classList.add('card-details');
+        
         const projectTitle = document.createElement('h3');
+        projectTitle.classList.add('text-title');
         projectTitle.textContent = project.title;
         
         const projectDescription = document.createElement('p');
+        projectDescription.classList.add('text-body');
         projectDescription.textContent = project.description;
         
+        const projectButton = document.createElement('a');
+        projectButton.classList.add('card-button');
+        projectButton.href = project.link.github;
+        projectButton.textContent = 'View on GitHub';
+        
+        projectDetails.appendChild(projectTitle);
+        projectDetails.appendChild(projectDescription);
         projectCard.appendChild(projectImage);
-        projectCard.appendChild(projectTitle);
-        projectCard.appendChild(projectDescription);
+        projectCard.appendChild(projectDetails);
+        projectCard.appendChild(projectButton);
         
         projectsContainer.appendChild(projectCard);
     });
