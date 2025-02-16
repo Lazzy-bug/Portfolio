@@ -1,4 +1,4 @@
-import projects from '../data/projects.js';
+import projects from './projects.js';
 
 document.addEventListener('DOMContentLoaded', () => {
     const toggleButton = document.getElementById('toggle-menu');
@@ -20,23 +20,23 @@ document.addEventListener('DOMContentLoaded', () => {
     // Fetch and display projects
     const projectsContainer = document.getElementById('projects-container');
     projects.forEach(project => {
-        const projectBox = document.createElement('div');
-        projectBox.classList.add('project-box');
-
+        const projectCard = document.createElement('div');
+        projectCard.classList.add('card');
+        
         const projectImage = document.createElement('img');
         projectImage.src = project.image;
-        projectImage.alt = 'Project Image';
-
-        const projectName = document.createElement('h3');
-        projectName.textContent = project.name;
-
+        projectImage.alt = project.title;
+        
+        const projectTitle = document.createElement('h3');
+        projectTitle.textContent = project.title;
+        
         const projectDescription = document.createElement('p');
         projectDescription.textContent = project.description;
-
-        projectBox.appendChild(projectImage);
-        projectBox.appendChild(projectName);
-        projectBox.appendChild(projectDescription);
-
-        projectsContainer.appendChild(projectBox);
+        
+        projectCard.appendChild(projectImage);
+        projectCard.appendChild(projectTitle);
+        projectCard.appendChild(projectDescription);
+        
+        projectsContainer.appendChild(projectCard);
     });
 });
