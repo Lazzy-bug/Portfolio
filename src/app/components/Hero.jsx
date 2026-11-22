@@ -1,7 +1,7 @@
 import { motion } from "motion/react";
 import { ArrowRight, Download } from "lucide-react";
 import { ImageWithFallback } from "./shared/ImageWithFallback.jsx";
-import portraitUrl from "./shared/DSC_0290.png";
+import portraitUrl from "./shared/hero-portrait.png";
 
 // Greek Meander / Key SVG pattern
 function MeanderPattern({ className = "" }) {

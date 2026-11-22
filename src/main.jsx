@@ -23,7 +23,7 @@ function ScrollToHash() {
 }
 
 createRoot(document.getElementById("root")).render(
-  <BrowserRouter>
+  <BrowserRouter basename={import.meta.env.BASE_URL}>
     <ScrollToHash />
     <Routes>
       <Route path="/" element={<App />} />
