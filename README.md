@@ -110,6 +110,39 @@ Then open `http://localhost:5173`.
 
 ---
 
+## 🚀 Deploy to Vercel
+
+This project is preconfigured for Vercel via `vercel.json`.
+
+### Option A — Git integration (recommended)
+
+1. Push the project to GitHub/GitLab/Bitbucket.
+2. Go to [vercel.com/new](https://vercel.com/new) and import the repository.
+3. Vercel detects the **Vite** preset automatically. Confirm these settings:
+   - **Build command:** `npm run build:vercel`
+   - **Output directory:** `dist`
+   - **Install command:** `npm install`
+4. Click **Deploy**. Every push to the default branch then deploys automatically.
+
+### Option B — Vercel CLI
+
+```bash
+# install the CLI once
+npm install -g vercel
+
+# preview deployment
+vercel
+
+# production deployment
+vercel --prod
+```
+
+> `npm run build:vercel` runs `vite build --base=/`, which overrides the GitHub Pages subpath base (`/Portfolio/`) so asset URLs resolve correctly on a Vercel root domain. Client-side routes such as `/beyond-code` are handled by the SPA rewrite in `vercel.json`.
+
+GitHub Pages still works unchanged with `npm run deploy`.
+
+---
+
 ## 📫 Let's connect
 
 <div align="center">
