@@ -4,7 +4,7 @@ import { Briefcase, GraduationCap, Calendar } from "lucide-react";
 const archives = [
   {
     type: "work",
-    title: "Software Engineering Intern",
+    title: "DevOps Engineering Intern",
     organization: "Roman Technologies",
     period: "2024",
     description:
@@ -17,7 +17,7 @@ const archives = [
   },
   {
     type: "work",
-    title: "Frontend Development Intern",
+    title: "Python Development Intern",
     organization: "EduTech Platform",
     period: "2023",
     description:
