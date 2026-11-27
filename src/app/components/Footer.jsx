@@ -356,12 +356,6 @@ export function Footer() {
             className="font-['Inter'] text-gray-700"
             style={{ fontSize: "0.7rem", letterSpacing: "0.12em", textTransform: "uppercase" }}
           >
-            Neo-Classic Materialism · Pixel Perfect
-          </p>
-          <p
-            className="font-['Inter'] text-gray-700"
-            style={{ fontSize: "0.7rem", letterSpacing: "0.12em", textTransform: "uppercase" }}
-          >
             Built with React + Tailwind
           </p>
         </div>
