@@ -1,6 +1,7 @@
 import { motion } from "motion/react";
 import { Link } from "react-router";
-import { Github, Linkedin, Mail, ArrowUpRight, Figma, Twitter } from "lucide-react";
+import { Github, Linkedin, Mail, ArrowUpRight, Figma, Twitter, FileText } from "lucide-react";
+import resumeUrl from "./shared/Prithviraj_A_Bhori_Resume.pdf";
 
 // Greek Meander SVG Pattern - full-width repeating
 function MeanderBorder() {
@@ -282,6 +283,18 @@ export function Footer() {
                 >
                   <Linkedin size={13} className="text-teal-700 flex-shrink-0" />
                   linkedin.com/in/prithvi-bhori-b29124281/
+                </a>
+              </li>
+              <li>
+                <a
+                  href={resumeUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-['Inter'] text-gray-500 hover:text-yellow-300 transition-colors flex items-center gap-2"
+                  style={{ fontSize: "0.82rem" }}
+                >
+                  <FileText size={13} className="text-gray-400 flex-shrink-0" />
+                  View resume (PDF)
                 </a>
               </li>
             </ul>

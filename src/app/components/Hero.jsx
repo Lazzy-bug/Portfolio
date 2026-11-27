@@ -2,6 +2,7 @@ import { motion } from "motion/react";
 import { ArrowRight, Download } from "lucide-react";
 import { ImageWithFallback } from "./shared/ImageWithFallback.jsx";
 import portraitUrl from "./shared/hero-portrait.png";
+import resumeUrl from "./shared/Prithviraj_A_Bhori_Resume.pdf";
 
 // Greek Meander / Key SVG pattern
 function MeanderPattern({ className = "" }) {
@@ -118,7 +119,8 @@ export function Hero() {
             </motion.a>
 
             <motion.a
-              href="#archives"
+              href={resumeUrl}
+              download="Prithviraj_A_Bhori_Resume.pdf"
               whileHover={{ scale: 1.04 }}
               whileTap={{ scale: 0.97 }}
               className="inline-flex items-center gap-2 px-7 py-3.5 border border-gray-300 text-gray-700 font-['Inter'] text-xs uppercase tracking-[0.18em] hover:border-teal-700 hover:text-teal-700 transition-colors bg-white"
